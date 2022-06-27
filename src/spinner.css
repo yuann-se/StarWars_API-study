@@ -1,0 +1,36 @@
+.loader-spinner {
+  position: fixed;
+  top: calc(50% - 75px);
+  left: calc(50% - 75px);
+  width: 150px;
+  height: 150px;
+}
+
+.loader-spinner svg {
+  width: 100%;
+  fill: none;
+}
+
+.load {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 0.7 0.3;
+  stroke-linecap: round;
+  stroke-width: 3px;
+  stroke: #0d6efd;
+}
+.load.one {
+  animation: load 1.5s infinite ease-in;
+  animation-direction: reverse;
+}
+.load.two {
+  fill: #0d6efd;
+}
+.load.three {
+  animation: load 1.5s infinite;
+}
+
+@keyframes load {
+  100% {
+    transform: rotate(360deg);
+  }
+}
